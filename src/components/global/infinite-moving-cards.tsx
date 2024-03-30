@@ -88,12 +88,13 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <Image
-            width={170}
+            width={96}
             height={1}
             src={item.href}
             alt={item.href}
             className=" relative rounded-2xl  object-contain opacity-50"
             key={item.href}
+            unoptimized
           />
         ))}
       </ul>

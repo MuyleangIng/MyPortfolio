@@ -10,6 +10,7 @@ import { CheckIcon, Link } from 'lucide-react'
 import Image from 'next/image'
 import surveyboximage from '/public/surveybox/image.png'
 import automatex from '/public/surveybox/mainlogo.png'
+import logoistad from '/public/surveybox/istad.png'
 import {GlobeDemo} from "@/components/global/GlobeDemo";
 export default function Home() {
   //WIP: remove fault IMAge for home page
@@ -159,15 +160,20 @@ To Manual.
                 translateZ="50"
                 className="text-xl font-bold text-neutral-600 dark:text-white "
               >
-                Unlimited
-                <h2 className="text-6xl ">$99</h2>
+                verify.istad.co
+                <Image
+                    src={logoistad}
+                    width={80}
+                    height={80}
+                    alt='logoistad'
+                />
               </CardItem>
               <CardItem
                 translateZ="60"
                 className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
               >
-                Get a glimpse of what our software is capable of. Just a heads
-                up {"you'll"} never leave us after this!
+                CSTAD is a noteworthy science and technology center in Cambodia.
+
                 <ul className="my-4 flex flex-col gap-2">
                   <li className="flex items-center gap-2">
                     <CheckIcon />3 Free automations
@@ -191,11 +197,13 @@ To Manual.
                   Try now →
                 </CardItem>
                 <CardItem
-                  translateZ={20}
-                  as="button"
-                  className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    translateZ={20}
+                    as="button"
+                    className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                 >
-                  Get Started Now
+                  <a href='https://verify.istad.co' target="_blank" rel="noopener noreferrer">
+                    Get Started Now
+                  </a>
                 </CardItem>
               </div>
             </CardBody>
